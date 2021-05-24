@@ -1,0 +1,19 @@
+{
+    "Main": {
+        "site_title": {
+            "type": "Text",
+            "config": {
+                "label": "Título do Site",
+                "placeholder": "e.g Debosh"
+            }
+        },
+        "logo": {
+            "type": "Image",
+            "config": {
+                "constraint": {},
+                "thumbnails": [],
+                "label": "Logo"
+            }
+        }
+    }
+}

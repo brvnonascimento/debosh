@@ -1,0 +1,23 @@
+{
+    "extends": "standard-with-typescript",
+    "parserOptions": {
+        "project": "tsconfig.json"
+    },
+    "rules": {
+        "@typescript-eslint/strict-boolean-expressions": "off",
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/space-before-function-paren": "off",
+        "@typescript-eslint/indent": "off",
+        "@typescript-eslint/semi": [
+            "error",
+            "always"
+        ],
+        "@typescript-eslint/member-delimiter-style": "off",
+        "semi": [
+            "error",
+            "always"
+        ],
+        "@typescript-eslint/naming-convention": "off",
+        "@typescript-eslint/restrict-template-expressions": "off"
+    }
+}

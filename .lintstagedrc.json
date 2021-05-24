@@ -1,0 +1,8 @@
+{
+  "*.ts": [
+    "yarn eslint --fix",
+    "yarn test:staged",
+    "yarn format",
+    "yarn typecheck"
+  ]
+}

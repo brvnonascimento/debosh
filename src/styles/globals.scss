@@ -1,0 +1,12 @@
+:root {
+  // Colors
+  --color-primary: #061429;
+  --color-white: #ffffff;
+
+  --color-text: var(--color-white);
+}
+
+body {
+  color: var(--color-text);
+  background: var(--color-primary);
+}
