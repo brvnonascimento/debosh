@@ -2,6 +2,15 @@ require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`
 });
 
+const devPlugins =
+  process.env.NODE_ENV === 'development'
+    ? [
+        'gatsby-plugin-dts-css-modules',
+        'gatsby-plugin-graphql-codegen',
+        'gatsby-plugin-extract-schema'
+      ]
+    : [];
+
 const prodPlugins =
   process.env.NODE_ENV !== 'development'
     ? [
@@ -22,12 +31,11 @@ module.exports = {
     siteUrl: process.env.BASE_DOMAIN
   },
   plugins: [
+    ...devPlugins,
     ...prodPlugins,
     // TODO: Preact breaks HMR and build.
     // 'gatsby-plugin-preact',
     'gatsby-plugin-typescript',
-    'gatsby-plugin-graphql-codegen',
-    'gatsby-plugin-dts-css-modules',
     'gatsby-plugin-postcss',
     'gatsby-plugin-sass',
     'gatsby-plugin-gatsby-cloud',
@@ -52,13 +60,12 @@ module.exports = {
     {
       resolve: 'gatsby-source-prismic',
       options: {
-        repositoryName: process.env.PRISMIC_REPOSITORY_NAME,
+        repositoryName: 'debosh',
         schemas: {
           settings_version: require('./src/prismic/schemas/settings_version.json'),
           news_post: require('./src/prismic/schemas/news_post.json')
         }
       }
-    },
-    'gatsby-plugin-extract-schema'
+    }
   ]
 };

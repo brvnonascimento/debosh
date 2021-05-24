@@ -15,6 +15,6 @@ const PreviewPage = ({ isPreview }: WithPreviewResolverProps) => {
 
 // @ts-expect-error
 export default withPreviewResolver(PreviewPage, {
-  repositoryName: process.env.PRISMIC_REPOSITORY_NAME,
+  repositoryName: 'debosh',
   linkResolver: () => linkResolver
 });
