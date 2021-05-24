@@ -19,12 +19,8 @@
   "dependencies": {
     "dotenv": "^10.0.0",
     "gatsby": "^3.4.1",
-    "gatsby-image": "^3.5.0",
-    "gatsby-plugin-dts-css-modules": "^2.0.0",
-    "gatsby-plugin-extract-schema": "^0.2.0",
     "gatsby-plugin-gatsby-cloud": "^2.5.0",
     "gatsby-plugin-google-analytics": "^3.5.0",
-    "gatsby-plugin-graphql-codegen": "^2.7.1",
     "gatsby-plugin-manifest": "^3.5.0",
     "gatsby-plugin-postcss": "^4.5.0",
     "gatsby-plugin-preact": "^5.5.0",
@@ -32,9 +28,7 @@
     "gatsby-plugin-sass": "^4.5.0",
     "gatsby-plugin-sharp": "^3.5.0",
     "gatsby-plugin-sitemap": "^4.1.0",
-    "gatsby-plugin-typescript-checker": "^1.1.1",
     "gatsby-source-prismic": "^3.3.6",
-    "gatsby-transformer-sharp": "^3.5.0",
     "postcss": "^8.2.15",
     "preact": "^10.5.13",
     "preact-render-to-string": "^5.1.19",
@@ -45,6 +39,10 @@
     "sass": "^1.32.13"
   },
   "devDependencies": {
+    "gatsby-plugin-graphql-codegen": "^2.7.1",
+    "gatsby-plugin-typescript-checker": "^1.1.1",
+    "gatsby-plugin-extract-schema": "^0.2.0",
+    "gatsby-plugin-dts-css-modules": "^2.0.0",
     "@babel/core": "^7.14.2",
     "@storybook/addon-actions": "^6.2.9",
     "@storybook/addon-essentials": "^6.2.9",
